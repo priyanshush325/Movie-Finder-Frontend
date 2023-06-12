@@ -25,7 +25,7 @@ function App() {
             <Searchbar updateMovie={updateMovie}/>
             <div className = "tileContainer">
               {cardsVisible && <AmcTile movie={movieQuery}/>}
-              {cardsVisible && <RottenTomatoesTile />}
+              {cardsVisible && <RottenTomatoesTile movie={movieQuery}/>}
             </div>
           </div>
       </div>
